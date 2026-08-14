@@ -7,8 +7,8 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 
-  return (
-    <>
+  return (  
+    <> 
       <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />

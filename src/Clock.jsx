@@ -6,15 +6,17 @@ function Clock() {
     const [clocks , setClocks]  = useState(["A","B","C"]);
 
     function handleChange () {
-        setClocks(['D','A','B','C']);
+        setClocks(['D', ...clocks]);
     }
 
     return (
         <>
         <button onClick={handleChange}></button>
         <div>
-            clocks.map(clock => )
+            {clocks.map(clock => <Counting key={clock} name={clock}></Counting> )}
         </div>
         </>
     )
 }
+
+export default Clock;

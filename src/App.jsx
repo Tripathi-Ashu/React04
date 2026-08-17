@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Food from './Food';
+import Clock from './Clock';
 
 function App() {
   const [foodItems, setFoodItems] = useState(['Apple', 'orange', 'banana'])
@@ -10,8 +11,7 @@ function App() {
 
   return (
     <>
-      <button onClick={handleChange}>Increment</button>
-      <Food foods={foodItems} />
+      <Clock></Clock>
     </>
   );
 }
